@@ -40,6 +40,7 @@ class CityRequest extends FormRequest
             'NAME_CITY.required' => 'O campo nome da cidade é obrigatório',
             'NAME_CITY.string' => 'O campo nome da cidade deve ser uma string',
             'NAME_CITY.max' => 'O campo nome da cidade deve ter no máximo 150 caracteres',
+            'NAME_CITY.unique' => 'Essa cidade já está cadastrada',
         ];
     }
 }
