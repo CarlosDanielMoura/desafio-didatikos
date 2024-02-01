@@ -22,12 +22,12 @@ class Product extends Model
 
     public function brands()
     {
-        return $this->belongsTo(Brand::class, 'BRAND_PRODUCT', 'COD_BRAND');
+        return $this->hasOne(Brand::class, 'BRAND_PRODUCT', 'COD_BRAND');
     }
 
     // Relacionamento com a tabela Cidade
-    public function cities()
+    public function city()
     {
-        return $this->belongsTo(City::class, 'CITY', 'COD_CITY');
+        return $this->hasOne(City::class, 'CITY', 'COD_CITY');
     }
 }
